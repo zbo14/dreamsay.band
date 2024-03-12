@@ -1,0 +1,137 @@
+:root {
+  --black: #131313;
+  --white: #e5e5e5;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
+.keywords {
+  display: none;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--black);
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+h2 {
+  color: var(--black);
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+}
+
+p, a {
+  color: var(--black);
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+a:visited {
+  color: unset;
+}
+
+.links {
+  display: flex;
+  gap: 5vw;
+}
+
+.tags {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.tags > p {
+  font-size: 16px;
+  padding: 0.5vh 2vw;
+  margin: 0;
+  border-radius: 6px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+#background-gradient-1 {
+  opacity: 0.25;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: animate-gradient 10s ease infinite;
+  /* stylelint-disable-next-line */
+  background: repeating-radial-gradient(red, yellow 0.00005%);
+  background-position: center;
+}
+
+#background-gradient-2 {
+  z-index: -2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: animate-gradient 10s linear infinite;
+  background: repeating-conic-gradient(
+    red 0%,
+    yellow 15%,
+    red 33%
+  );
+  background-position: center;
+}
+
+@keyframes animate-gradient {
+  0% { 
+    filter: hue-rotate(0) blur(1px);
+  }
+
+  50% { 
+    filter: hue-rotate(360deg) blur(2px) contrast(200%) drop-shadow(0 -6mm 4mm rgb(210 0 186)) brightness(1.5);
+  }
+
+  100% { 
+    filter: hue-rotate(0) blur(1px);;
+  }
+}
+
+@media screen and (width > 800px) {
+  main {
+    width: 33%;
+  }
+
+  .links {
+    gap: 2vw;
+  }
+  
+  .tags {
+    gap: 1vw;
+  }
+
+  .tags > p {
+    padding: 0.5vh 0.75vw;
+  }
+}
