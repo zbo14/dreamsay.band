@@ -93,8 +93,8 @@ a:visited {
   /* stylelint-disable-next-line */
   background: repeating-radial-gradient(
     circle at center in hsl longer hue,
-    red 200px,
-    yellow 100px
+    red 60px,
+    yellow 30px
   );
   background-position: center;
 }
