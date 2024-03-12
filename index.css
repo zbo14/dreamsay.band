@@ -92,8 +92,8 @@ a:visited {
   /* stylelint-disable-next-line */
   background: repeating-radial-gradient(
     circle at center in hsl longer hue,
-    pink 100px,
-    cyan 60px
+    red 30px,
+    blue 60px
   );
   background-position: center;
 }
@@ -106,9 +106,9 @@ a:visited {
   animation: animate-gradient 10s linear infinite;
   background: repeating-conic-gradient(
     in hsl longer hue,
-    pink 0%,
-    rgb(240, 52, 209) 25%,
-    pink 50%
+    red 0%,
+    yellow 15%,
+    red 33%
   );
   background-position: center;
 }
