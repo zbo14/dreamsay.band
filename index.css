@@ -93,8 +93,8 @@ a:visited {
   /* stylelint-disable-next-line */
   background: repeating-radial-gradient(
     circle at center in hsl longer hue,
-    red 30px,
-    yellow 60px
+    red 200px,
+    yellow 100px
   );
   background-position: center;
 }
@@ -108,23 +108,23 @@ a:visited {
   background: repeating-conic-gradient(
     in hsl shorter hue,
     red 0%,
-    yellow 15%,
-    red 33%
+    yellow 10%,
+    red 20%
   );
   background-position: center;
 }
 
 @keyframes animate-gradient {
-  0% { 
-    filter: hue-rotate(0) blur(1px);
+  0% {
+    filter: hue-rotate(0);
   }
 
-  50% { 
-    filter: hue-rotate(360deg) blur(2px) contrast(200%) drop-shadow(0 -6mm 4mm rgb(210 0 186)) brightness(1.5);
+  50% {
+    filter: hue-rotate(360deg);
   }
 
-  100% { 
-    filter: hue-rotate(0) blur(1px);;
+  100% {
+    filter: hue-rotate(0);
   }
 }
 
