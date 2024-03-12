@@ -52,7 +52,7 @@ h2 {
 
 p, a {
   color: var(--black);
-  font-family: "Indie Flower", cursive;
+  font-family: "Freckle Face", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
@@ -74,6 +74,7 @@ a:visited {
 }
 
 .tags > p {
+  font-family: "Indie Flower", cursive;
   font-size: 16px;
   padding: 0.5vh 2vw;
   margin: 0;
@@ -93,7 +94,7 @@ a:visited {
   background: repeating-radial-gradient(
     circle at center in hsl longer hue,
     red 30px,
-    blue 60px
+    yellow 60px
   );
   background-position: center;
 }
@@ -105,7 +106,7 @@ a:visited {
   height: 100%;
   animation: animate-gradient 10s linear infinite;
   background: repeating-conic-gradient(
-    in hsl longer hue,
+    in hsl shorter hue,
     red 0%,
     yellow 15%,
     red 33%
